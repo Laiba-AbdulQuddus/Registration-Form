@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form class="details" action="post">
+       <div>
+           <label for="firstname">Enter Your First Name:</label> 
+        </div>
+        <div>
+            <input type="text" id="firstname" name="name" >
+        </div>
+
+        <div>
+            <label for="lastname">Enter Your Last Name:</label> 
+         </div>
+         <div>
+             <input type="text" id="lastname" name="name" >
+         </div>
+         <div>
+            <label for="email">Enter Your Email Name:</label> 
+         </div>
+         <div>
+             <input type="text" id="email" name="name">
+         </div>
+         <div>
+            <label for="password">Create a New Password:</label> 
+         </div>
+         <div>
+             <input type="text" id="password" name="name">
+         </div>
+
+    </form>
+    <div class="separation"></div>
+    <form action="post">
+        <legend>Account type (required)</legend>
+        <label for="personal"><input type="radio" name="accounttype" id="personal">Personal</label>
+        <label for="business"><input type="radio" name="accounttype" id="business">Business</label>
+    </form>
+    <div class="separation"></div>
+  <form action="post">
+      <div >
+          <label for="age">Input your age (years):</label> 
+        </div>
+        <div >
+            <input class="age" type="text" id="age" name="age" >
+        </div>
+    </form>
+    <div class="source">
+        <legend>How did you hear about us?</legend>
+        <select name="source" id="">
+            <option value="select">(Select one)</option>
+            <option value="news">freecodecamp News</option>
+            <option value="youtube">freecodecamp YouTube Channel</option>
+            <option value="forum">freecodecamp Forum</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    <div class="bio">
+        <div class="provide-bio">
+            <label for="bio">Provide a bio: </label>
+        </div>
+        <textarea name="bio" id="bio" rows="3" cols="30" placeholder="
+        I like coding on the beach..." required></textarea>
+    </div>
+    <div class="terms">
+        <form action="post"></form>
+        <input type="checkbox" name="terms" id="terms">
+        <label for="terms">I accept the terms and conditions</label>
+    </div>
+    <button>Submit</button>
+</body>
+</html>
